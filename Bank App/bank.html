@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Bank App</title>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<h1>Credit<span>Agricole</span></h1>
+		</div>		
+		<div class="info">
+			<h1>Hello <span id="infoUsername"></span>, your balance</h1>
+			<h2><span id="infoMoney"></span>$</h2>
+			<button id="logout">Logout ➦</button>
+		</div>
+	</header>
+
+
+	<div class="text">
+		<h2><span id="all">Credit<span id="green">Agricole</span></span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+	</div>
+
+
+	<div class="hero">
+		<div class="deposit">
+			<h2>Deposit your money right now</h2>
+			<div class="lineH"></div>
+			<button id="depositBtn">Deposit</button>
+		</div>
+		<div class="withdraw">
+			<h2>Withdraw your money right now</h2>
+			<div class="lineH"></div>
+			<button id="withdrawBtn">Withdraw</button>
+		</div>
+		<div class="transfer">
+			<h2>Transfer your money to other guy</h2>
+			<div class="lineH"></div>
+			<button id="transferBtn">Transfer</button>
+		</div>
+	</div>
+
+	<div class="deposit-popup">
+		<h2>Deposit</h2>
+		<div class="line"></div>
+		<form id="depositForm">
+			<input id="depositInput" type="text" placeholder="money">
+			<button>➝</button>
+		</form>
+		<button id="closeDeposit-popup">Close</button>
+	</div>
+
+	<div class="withdraw-popup">
+		<h2>Withdraw</h2>
+		<div class="line"></div>
+		<form id="withdrawForm">
+			<input id="withdrawInput" type="text" placeholder="money">
+			<button>➝</button>
+		</form>
+		<button id="closeWithdraw-popup">Close</button>
+	</div>	
+
+	<div class="transfer-popup">
+		<h2>Transfer</h2>
+		<div class="line"></div>
+		<form id="transferForm">
+			<input id="transferInputUsername" type="text" placeholder="user">
+			<input id="transferInputMoney" type="text" placeholder="money">
+			<button>➝</button>
+		</form>
+		<button id="closeTransfer-popup">Close</button>
+	</div>	
+
+
+	<script src="js/Session.js"></script>
+	<script src="js/User.js"></script>
+	<script src="js/bank.js"></script>
+</body>
+</html>

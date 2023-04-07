@@ -1,0 +1,336 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #e6e7eb;
+}
+
+.login-wrapper {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.login-wrapper h2 {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.login-wrapper h1 {
+	font-size: 35px;
+}
+
+.login-wrapper h1 span {
+	color: #45c22d;
+}
+
+form {
+	display: flex;
+	align-items: center;
+}
+
+form input {
+	text-align: center;
+	font-size: 16px;
+	height: 35px;
+	border-radius: 20px;
+	border: 2px solid black;
+	margin-right: 20px;
+}
+
+form button {
+	background: transparent;
+	border: none;
+	font-size: 50px;
+	transition: 0.4s;
+}
+
+form button:hover {
+	transform: translateX(14px);
+}
+
+.register-wrapper {
+	width: 77%;
+	margin: auto;
+	margin-top: 250px;	
+}
+
+.register-wrapper h2 {
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.register-wrapper h2 span {
+	color: #45c22d;
+}
+
+
+
+/*//////////////////////*/
+/*        BANK          */
+/*//////////////////////*/
+
+
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+header .logo h1 {
+	font-size: 35px;
+	color: #000;
+}
+
+header .logo h1 span {
+	color: #45c22d;
+}
+
+header .info {
+	display: flex;
+	align-items: center;
+}
+
+header .info h1 {
+	font-size: 20px;	
+	margin-right: 5px;	
+}
+
+header .info h1 span {
+	color: #45c22d;	
+}
+
+header .info h2 {
+	background: #45c22d;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 20px;		
+	padding: 7px 16px;
+	border-radius: 13px;
+	margin-right: 35px;
+}
+
+
+
+header .info button {
+	background: #e03626;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 20px;		
+	padding: 7px 16px;
+	border-radius: 13px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+header .info button:hover {
+	transform: translateX(10px);
+}
+
+.text {
+	width: 65%;
+	margin: auto;
+}
+
+.text h2 {
+ 	color: #000;
+ 	font-weight: 500;
+ 	font-size: 19px;
+ 	margin-top: 250px;
+ 	margin-bottom: 70px;
+ 	max-width: 65%;
+}
+
+.text h2 #all {
+	font-weight: 600;
+}
+
+.text h2 #green {
+	color: #45c22d;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 65%;
+	margin: auto;
+	text-align: center;
+}
+
+.hero .lineH {
+	display: block;
+	width: 20%;
+	height: 2px;
+	background: #fff;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 35px;
+
+}
+
+.hero h2 {
+	font-size: 20px;
+	font-weight: 400;	
+	color: #fff;
+}
+
+.hero button {
+	background: #fff;
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 6px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+.hero button:hover {
+	transform: rotate(8deg);
+}
+
+.hero .deposit {
+	background: #a14242;
+	padding: 60px 35px;
+	border-radius: 15px;
+}
+
+.hero .withdraw {
+	background: #42a142;
+	padding: 60px 35px;
+	border-radius: 15px;
+}
+
+.hero .transfer {
+	background: #4293a1;
+	padding: 60px 35px;
+	border-radius: 15px;
+}
+
+.deposit-popup {
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #ede8e8;
+	box-shadow: rgba(0,0,0,0.6) 0 0 1000px 1000px;
+	max-width: 500px;
+	margin: auto;
+	padding: 50px;
+	border-radius: 15px;
+}
+
+.deposit-popup .line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;	
+}
+
+.deposit-popup button#closeDeposit-popup {
+	background: #bf2e2e;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 16px;		
+	padding: 7px 16px;
+	border-radius: 13px;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+.withdraw-popup {
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #ede8e8;
+	box-shadow: rgba(0,0,0,0.6) 0 0 1000px 1000px;
+	max-width: 500px;
+	margin: auto;
+	padding: 50px;
+	border-radius: 15px;
+}
+
+.withdraw-popup .line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;	
+}
+
+.withdraw-popup button#closeWithdraw-popup {
+	background: #bf2e2e;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 16px;		
+	padding: 7px 16px;
+	border-radius: 13px;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+.transfer-popup {
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #ede8e8;
+	box-shadow: rgba(0,0,0,0.6) 0 0 1000px 1000px;
+	max-width: 620px;
+	margin: auto;
+	padding: 50px;
+	border-radius: 15px;
+}
+
+.transfer-popup .line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;	
+}
+
+.transfer-popup button#closeTransfer-popup {
+	background: #bf2e2e;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 16px;		
+	padding: 7px 16px;
+	border-radius: 13px;
+	cursor: pointer;
+	margin-top: 30px;
+}
